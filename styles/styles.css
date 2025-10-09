@@ -17,20 +17,336 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    list-style: none;
+    font-family: Roboto;
+}
+
+a {
+    color: #5722CD;
+    text-decoration: none;
+}
+
+a:hover{
+
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
+.merriweather {
+                   font-family: "Merriweather", serif;
+                   font-optical-sizing: auto;
+                   font-weight: 20;
+                   font-style: normal;
+                   font-variation-settings:
+                           "wdth" 100;
+               }
+
+.roboto {
+             font-family: "Roboto", sans-serif;
+             font-optical-sizing: auto;
+             font-weight: 20;
+             font-style: normal;
+             font-variation-settings:
+                     "wdth" 100;
+         }
+
+header, main, footer, p {
+    font-family: Roboto, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: Merriweather, "Arial", serif;
+}
+
+
 
 /* ------------------------------- 3. Layout --------------------------------------- */
+/*Paars #5722CD;*/
+/*Blauw #4845E4;*/
+/*Roze #ED4385;*/
+/*Zwart #0C0C0C (voor standaard tekst);*/
+/*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
+/*Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*!*/
+/*Grijs #7A7A7A (voor de service-tegel tekst);*/
 
 /* --------------- 3.1 Reusables ----------------------- */
+button {
+    width: 200px;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #ED4385;
+    color: whitesmoke;
+    border: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
 
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+header {
+    background: linear-gradient(to top left, #5722CD, #4845E4);
+    color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 550px;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*li {*/
+
+/*}*/
+
+.header-outerbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-class-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 80px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.header-class-text h1 {
+    font-size: 2em;
+    max-width: 500px;
+}
+
+.header-class-text p {
+    padding: 20px;
+}
+
+.header-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.header-image {
+    display: flex;
+    justify-content: center;
+    flex-basis: 20px;
+    position: relative;
+}
+
+/*.header-image img{*/
+
+/*}*/
+
 
 /* --------------- 4.2 Introduction ------------------- */
+.hello-agency{
+    display: flex;
+    flex-direction: column;
+}
+
+.hello-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: #5722CD;
+    text-align: center;
+}
+
+.hello-text h1 {
+    padding: 10px;
+    max-width: 850px;
+}
+
+.hello-question{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 130px;
+}
+
+/* --------------- 4.3 Work ------------------- */
+
+.work-main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    background-color: #f4f6f9;
+}
+
+.work-article-base {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.work-box-all {
+    display: flex;
+    flex-basis: 1400px;
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-grow: 0;
+    justify-content: space-between;
+}
+
+.work-article-base:nth-of-type(even) .work-box-all {
+    flex-direction: row-reverse;
+}
+
+.work-article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 350px;
+    flex-shrink: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.work-waveline {
+    width: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.work-links {
+    padding-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.work-box-img {
+    display: flex;
+    flex-basis: 800px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    width: 100%;
+    min-width: 300px;
+    box-shadow: 3px 3px 22px 0 rgba(156,156,156,0.62);
+}
+
+.img-properties {
+    width: 100%;
+}
+
+/* --------------- 4.4 Services ------------------- */
+
+.service-main {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    flex-basis: 100%;
+    border: pink dashed 2px;
+}
+
+.service-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    margin-right: 20px;
+    margin-left: 20px;
+    gap: 20px;
+    max-width: 1100px;
+}
+
+.service-article {
+    display: flex;
+    flex-basis: 350px;
+    flex-shrink: 1;
+    /*min-height: 350px;*/
+    border: #5722CD solid 1.5px;
+    box-shadow: 3px 3px 15px 0 rgba(156,156,156,0.62);
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 25px;
+}
+
+.article-content h3 {
+    color: #5722CD;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.service-icons {
+    width: 70px;
+}
+
+
+/* --------------- 4.5 Form ------------------- */
+.form-box {
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+    background: linear-gradient(to top left, #5722CD, #4845E4);
+    color: whitesmoke;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 1000px;
+}
+
+.form-content h1 {
+    display: flex;
+    border: pink solid 1.5px;
+    padding-bottom: 15px;
+}
+.form-content p {
+    display: flex;
+    border: pink solid 1.5px;
+    padding-bottom: 15px;
+}
+
+.form-content label {
+    display: flex;
+}
+
+.form-content input {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: Roboto;
+}
+
+.form-content textarea {
+    display: flex;
+    font-family: Roboto;
+    padding: 10px;
+}
+
+.form-content button {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+/* --------------- 5.1 Footer ------------------- */
+
+footer {
+text-align: center;
+    padding: 20px;
+    color: whitesmoke;
+    background-color: black;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
