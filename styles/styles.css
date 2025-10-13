@@ -26,30 +26,27 @@ a {
     text-decoration: none;
 }
 
-a:hover{
-
+a:hover {
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .merriweather {
-                   font-family: "Merriweather", serif;
-                   font-optical-sizing: auto;
-                   font-weight: 20;
-                   font-style: normal;
-                   font-variation-settings:
-                           "wdth" 100;
-               }
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 20;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
 
 .roboto {
-             font-family: "Roboto", sans-serif;
-             font-optical-sizing: auto;
-             font-weight: 20;
-             font-style: normal;
-             font-variation-settings:
-                     "wdth" 100;
-         }
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
 
 header, main, footer, p {
     font-family: "Roboto", sans-serif;
@@ -151,12 +148,12 @@ ul {
 
 
 /* --------------- 4.2 Introduction ------------------- */
-.hello-agency{
+.hello-agency {
     display: flex;
     flex-direction: column;
 }
 
-.hello-text{
+.hello-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,7 +168,7 @@ ul {
     max-width: 850px;
 }
 
-.hello-question{
+.hello-question {
     display: flex;
     justify-content: center;
     padding-bottom: 130px;
@@ -179,7 +176,7 @@ ul {
 
 /* --------------- 4.3 Work ------------------- */
 
-.work-main{
+.work-main {
     display: flex;
     flex-direction: column;
     padding-top: 200px;
@@ -234,7 +231,7 @@ ul {
     flex-grow: 0;
     width: 100%;
     min-width: 300px;
-    box-shadow: 3px 3px 22px 0 rgba(156,156,156,0.62);
+    box-shadow: 3px 3px 22px 0 rgba(156, 156, 156, 0.62);
 }
 
 .img-properties {
@@ -269,7 +266,7 @@ ul {
     flex-shrink: 1;
     /*min-height: 350px;*/
     border: #5722CD solid 1.5px;
-    box-shadow: 3px 3px 15px 0 rgba(156,156,156,0.62);
+    box-shadow: 3px 3px 15px 0 rgba(156, 156, 156, 0.62);
 }
 
 .article-content {
@@ -301,11 +298,10 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 1100px;
+    flex-basis: 1000px;
     padding-top: 100px;
     padding-bottom: 100px;
     color: whitesmoke;
-    border: red solid 1.5px;
 }
 
 .form-box-content p {
@@ -318,72 +314,38 @@ ul {
 }
 
 #name {
+    display: flex;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 #email {
+    display: flex;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
-#message {
+textarea {
+    display: flex;
     padding: 10px;
 }
 
 .form-box-sizer {
-    display: flex;
     padding-bottom: 20px;
-    border: red solid 1.5px;
 }
 
+.input {
+    padding-bottom: 20px;
+}
 
-/*.form-box {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    flex-direction: column;*/
-/*    padding-top: 80px;*/
-/*    justify-content: center;*/
-/*    background: linear-gradient(to top left, #5722CD, #4845E4);*/
-/*    color: whitesmoke;*/
-/*}*/
-
-/*.form-content h1 {*/
-/*    display: flex;*/
-/*    padding-bottom: 25px;*/
-/*}*/
-/*.form-content p {*/
-/*    display: flex;*/
-/*    padding-bottom: 40px;*/
-/*}*/
-
-/*.form-label-box {*/
-/*    display: flex;*/
-/*    border: red solid 1.5px;*/
-/*}*/
-
-/*.form-content input {*/
-/*    display: flex;*/
-/*    padding: 10px;*/
-/*    margin-bottom: 10px;*/
-/*    font-family: Roboto;*/
-/*}*/
-
-/*.form-content textarea {*/
-/*    display: flex;*/
-/*    font-family: Roboto;*/
-/*    padding: 10px;*/
-/*}*/
-
-/*.form-button {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    padding-bottom: 60px;*/
-/*    margin-top: 40px;*/
-/*}*/
+.form-box-sizer label {
+    padding-bottom: 20px;
+}
 
 /* --------------- 5.1 Footer ------------------- */
 
 footer {
-text-align: center;
+    text-align: center;
     padding: 20px;
     color: whitesmoke;
     background-color: black;
@@ -391,3 +353,43 @@ text-align: center;
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
 
+@media screen and (max-width: 800px) {
+
+    .work-article-base {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .work-box-all {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .work-article-base:nth-of-type(even) .work-box-all {
+        flex-direction: column-reverse;
+    }
+
+    .work-article-text {
+        display: flex;
+        flex-shrink: 0;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .work-box-img {
+        display: flex;
+        flex-basis: 100%;
+        flex-shrink: 1;
+        flex-grow: 0;
+        width: 100%;
+        min-width: 300px;
+        box-shadow: 3px 3px 22px 0 rgba(156, 156, 156, 0.62);
+    }
+
+    .img-properties {
+        width: 100%;
+    }
+}
