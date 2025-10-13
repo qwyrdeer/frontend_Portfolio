@@ -31,6 +31,8 @@ a:hover{
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 .merriweather {
                    font-family: "Merriweather", serif;
                    font-optical-sizing: auto;
@@ -50,11 +52,11 @@ a:hover{
          }
 
 header, main, footer, p {
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: Merriweather, "Arial", serif;
+    font-family: "Merriweather", serif;
 }
 
 /* ------------------------------- 3. Layout --------------------------------------- */
@@ -388,3 +390,4 @@ text-align: center;
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
