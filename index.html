@@ -166,24 +166,27 @@
     </section>
     <!--    Form (ik zie dit nergens in het voorbeeld staan.-->
     <div class="form-box">
-        <div class="form-content">
+        <div class="form-box-content">
             <h1>Let's work together</h1>
             <p>Have a question? Need a quote? Let us know!</p>
-            <form onsubmit="/" id="contactform">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Name" size="101"/>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Email" size="101"/>
-                <label for="message">Message</label>
-                <textarea type="text" id="message" placeholder="Message" cols="99" rows="15" /></textarea>
-            </form>
-            <button type="submit" form="contactform">SEND</button>
+                <div class="form-box-sizer">
+                    <form onsubmit="" id="contactform">
+                        <label for="name" class="label-text">Name</label>
+                        <input type="text" id="name" placeholder="Name" style="width: 100%"/>
+                        <label for="email" class="label-text">Email</label>
+                        <input type="email" id="email" placeholder="Email" style=" width: 100%"/>
+                        <label for="message" class="label-text">Message</label>
+                        <textarea type="text" id="message" placeholder="Message" style="width: 100%"
+                                  rows="15"/></textarea>
+                    </form>
+                </div>
+            <div class="form-button">
+                <button type="submit" form="contactform">SEND</button>
+            </div>
         </div>
     </div>
 
 </main>
-
-
 <footer>
     Business website opdracht © NOVI Hogeschool 2022
 </footer>

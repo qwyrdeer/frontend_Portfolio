@@ -57,8 +57,6 @@ h1, h2, h3 {
     font-family: Merriweather, "Arial", serif;
 }
 
-
-
 /* ------------------------------- 3. Layout --------------------------------------- */
 /*Paars #5722CD;*/
 /*Blauw #4845E4;*/
@@ -74,6 +72,7 @@ button {
     border-radius: 30px;
     padding: 20px;
     background-color: #ED4385;
+    text-align: center;
     color: whitesmoke;
     border: none;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
@@ -193,9 +192,9 @@ ul {
 
 .work-box-all {
     display: flex;
-    flex-basis: 1400px;
-    margin-right: 20px;
-    margin-left: 20px;
+    flex-basis: 1300px;
+    margin-right: 40px;
+    margin-left: 40px;
     flex-grow: 0;
     justify-content: space-between;
 }
@@ -248,7 +247,6 @@ ul {
     padding-bottom: 30px;
     justify-content: center;
     flex-basis: 100%;
-    border: pink dashed 2px;
 }
 
 .service-box {
@@ -293,52 +291,92 @@ ul {
 /* --------------- 4.5 Form ------------------- */
 .form-box {
     display: flex;
-    padding-top: 80px;
-    justify-content: center;
     background: linear-gradient(to top left, #5722CD, #4845E4);
-    color: whitesmoke;
+    justify-content: center;
 }
 
-.form-content {
+.form-box-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 1000px;
+    flex-basis: 1100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: whitesmoke;
+    border: red solid 1.5px;
 }
 
-.form-content h1 {
-    display: flex;
-    border: pink solid 1.5px;
+.form-box-content p {
+    padding-bottom: 30px;
+}
+
+.form-box-content h1 {
+    font-size: 40px;
     padding-bottom: 15px;
 }
-.form-content p {
-    display: flex;
-    border: pink solid 1.5px;
-    padding-bottom: 15px;
-}
 
-.form-content label {
-    display: flex;
-}
-
-.form-content input {
-    display: flex;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family: Roboto;
-}
-
-.form-content textarea {
-    display: flex;
-    font-family: Roboto;
+#name {
     padding: 10px;
 }
 
-.form-content button {
-    display: flex;
-    margin-top: 40px;
-    margin-bottom: 70px;
+#email {
+    padding: 10px;
 }
+
+#message {
+    padding: 10px;
+}
+
+.form-box-sizer {
+    display: flex;
+    padding-bottom: 20px;
+    border: red solid 1.5px;
+}
+
+
+/*.form-box {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*    padding-top: 80px;*/
+/*    justify-content: center;*/
+/*    background: linear-gradient(to top left, #5722CD, #4845E4);*/
+/*    color: whitesmoke;*/
+/*}*/
+
+/*.form-content h1 {*/
+/*    display: flex;*/
+/*    padding-bottom: 25px;*/
+/*}*/
+/*.form-content p {*/
+/*    display: flex;*/
+/*    padding-bottom: 40px;*/
+/*}*/
+
+/*.form-label-box {*/
+/*    display: flex;*/
+/*    border: red solid 1.5px;*/
+/*}*/
+
+/*.form-content input {*/
+/*    display: flex;*/
+/*    padding: 10px;*/
+/*    margin-bottom: 10px;*/
+/*    font-family: Roboto;*/
+/*}*/
+
+/*.form-content textarea {*/
+/*    display: flex;*/
+/*    font-family: Roboto;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.form-button {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    padding-bottom: 60px;*/
+/*    margin-top: 40px;*/
+/*}*/
 
 /* --------------- 5.1 Footer ------------------- */
 
