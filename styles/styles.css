@@ -99,10 +99,6 @@ ul {
     margin-right: 10px;
 }
 
-/*li {*/
-
-/*}*/
-
 .header-outerbox {
     display: flex;
     flex-direction: column;
@@ -144,11 +140,6 @@ ul {
     justify-content: center;
     top: 70px;
 }
-
-/*.header-image img{*/
-
-/*}*/
-
 
 /* --------------- 4.2 Introduction ------------------- */
 .hello-agency {
@@ -293,7 +284,6 @@ ul {
 .service-icons {
     width: 70px;
 }
-
 
 /* --------------- 4.5 Form ------------------- */
 .form-box {
