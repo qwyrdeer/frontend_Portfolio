@@ -82,6 +82,7 @@ button {
 header {
     background: linear-gradient(to top left, #5722CD, #4845E4);
     color: whitesmoke;
+    position: relative;
 }
 
 nav {
@@ -116,28 +117,32 @@ ul {
     padding-top: 80px;
     margin-right: 10px;
     margin-left: 10px;
+    position: relative;
 }
 
 .header-class-text h1 {
     font-size: 2em;
     max-width: 500px;
+    position: relative;
 }
 
 .header-class-text p {
     padding: 20px;
+    position: relative;
 }
 
 .header-button {
     display: flex;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
+    position: relative;
 }
 
 .header-image {
-    position: absolute;
-    top: 320px;
-    left: 907px;
-    z-index: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 70px;
 }
 
 /*.header-image img{*/
