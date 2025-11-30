@@ -145,6 +145,7 @@ ul {
 .hello-agency {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .hello-text {
@@ -155,6 +156,7 @@ ul {
     padding-bottom: 100px;
     color: #5722CD;
     text-align: center;
+    z-index: 1;
 }
 
 .hello-text h1 {
@@ -299,17 +301,18 @@ ul {
     align-items: center;
     flex-basis: 1000px;
     padding-top: 100px;
-    padding-bottom: 100px;
     color: whitesmoke;
-}
-
-.form-box-content p {
-    padding-bottom: 30px;
 }
 
 .form-box-content h1 {
     font-size: 40px;
     padding-bottom: 15px;
+    padding-top: 40px;
+}
+
+.form-box-content p {
+    padding-bottom: 30px;
+
 }
 
 #name {
@@ -423,4 +426,13 @@ footer {
     border-left: 100vw solid transparent;
     border-right: 0px solid white;
     border-top: 50px solid white;
+}
+
+.hello-background-word::before {
+        content: "hello";
+        position: absolute;
+        font-size: 480px;
+        color:#F2F0FF;
+        top: 10px;
+        left: 420px;
 }
